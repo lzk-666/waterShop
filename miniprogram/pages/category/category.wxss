@@ -1,0 +1,35 @@
+ .grid {
+  width: 375rpx;
+  height: 450rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10rpx;
+}
+.van-tab__pane.van-tab__pane--active {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid .title {
+  font-size: 26rpx;
+  margin-top: -14rpx;
+  padding-bottom: 20rpx;
+}
+.grid .picture {
+  width: 350rpx;
+  height:350rpx;
+  margin: 0 auto
+}
+.grid .info {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.grid .sell_price {
+  padding-right: 160rpx;
+  color: red
+}
+.sell_number{
+  font-size: 24rpx;
+  color: #A5A2A2
+}
+

@@ -1,0 +1,26 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <block wx:for="{{category}}" wx:key="{{item._id}}">
+    <van-tab title="{{item.category}}">
+      <block wx:for="{{message}}" wx:key="{{item2._id}}" wx:for-item="item2" wx:for-index="index2">
+
+        <view class="grid">
+          <navigator url="/pages/xiangqing/xiangqing?id={{item2._id}}">
+            <image class='picture' src="{{item2.img_url}}"></image>
+          </navigator>
+          <view class="info">
+            <text class="title">{{item2.title}}</text>
+            <view class="info_bottom">
+              <text class="sell_price">{{item2.sell_price}}元</text>
+              <text class="sell_number">已售{{item2.sell_number}}桶</text>
+            </view>
+          </view>
+        </view>
+
+
+        <!-- <text>{{item2.title}}</text> -->
+      </block>
+    </van-tab>
+  </block>
+
+
+</van-tabs>

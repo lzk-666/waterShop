@@ -1,0 +1,95 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wxb4ff19dbaf7fba86",
+	"projectname": "shop",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/xiangqing/xiangqing",
+					"pathName": "pages/xiangqing/xiangqing",
+					"query": "id=ayGT0z0ZLNimByO6EAZUo14m1Uw8a69Rd7ux0gF4JM1zKzXy",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shopCar/shopCar",
+					"pathName": "pages/shopCar/shopCar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myself/myself",
+					"pathName": "pages/myself/myself",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/location/location",
+					"pathName": "pages/location/location",
+					"query": "id=ayGT0z0ZLNimByO6EAZUo14m1Uw8a69Rd7ux0gF4JM1zKzXy",
+					"scene": null
+				}
+			]
+		}
+	}
+}

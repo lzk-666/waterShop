@@ -1,0 +1,33 @@
+image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%
+}
+
+
+
+
+page {
+  background-color: rgb(223, 221, 221)
+}
+.content {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.info {
+  margin-left: -120rpx;
+}
+.info text {
+  display: block;
+  font-size: 24rpx;
+  color: rgb(139, 138, 138);
+  padding:10rpx;
+}
+.title {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+}

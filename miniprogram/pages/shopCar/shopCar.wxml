@@ -1,0 +1,33 @@
+<view class="goods" >
+  <view class="item" wx:for="{{goods}}" wx:key="{{item._id}}">
+    <radio checked="{{item.selected}}" data-id="{{item._id}}" bindtap="changeSelected" color="#FFA500" ></radio>
+    <navigator url="/pages/xiangqing/xiangqing?id={{item._id}}">
+    <image src="{{item.img_url}}"></image>
+    </navigator>
+    <view class="info">
+      <view class="info_top">
+        <text class="title">{{item.title}}</text>
+        <icon type="cancel" bindtap="deleteGood" data-id="{{item._id}}"></icon>
+      </view>
+      <view class="info_bottom">
+        <text class="sell_price">{{item.sell_price}}.00</text>
+        <view class="number_btn">
+          <van-button size='mini' color="#ccc" bindtap="changeNumber" data-id="{{item._id}}" data-option="reduce">-</van-button>
+          <view class="selectedNumber">{{item.selectedNumber}}</view>
+          <van-button size='mini' color="#ccc" bindtap="changeNumber" data-id="{{item._id}}" data-option="add">+</van-button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<van-submit-bar
+  price="{{ allPrice }}"
+  button-text="立即购买"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+  <radio class="allSelect" color="#FFA500" checked="{{allSelected}}" bindtap="changeAllSelected"></radio>
+  <van-tag type="primary">全选</van-tag>
+
+</van-submit-bar>

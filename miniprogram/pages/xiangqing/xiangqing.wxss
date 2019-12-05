@@ -1,0 +1,55 @@
+page {
+  background-color: #C1C1C1;
+}
+.picture {
+  width: 750rpx;
+  height:750rpx;
+}
+.info {
+  height: 200rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  padding-left: 20rpx;
+  margin-bottom: 10rpx;
+}
+.title {
+  display: block;
+  font-weight: bold;
+}
+.number .sell_price{
+  color: red;
+  font-size: 40rpx;
+}
+.number .sell_number {
+  font-size: 26rpx;
+  color: #8b8a8a;
+  padding-left: 30rpx;
+}
+.xiangqing {
+  background-color: #fff;
+  margin-bottom: 100rpx;
+}
+.xq_title{
+  text-align: center;
+  margin: 20rpx 0;
+  color: red;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.xq_content text {
+  display: block;
+  padding-bottom: 20rpx;
+  color: rgb(31, 170, 31)
+}
+.xq_content text:last-child {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: red;
+  padding-left: 60rpx;
+}
+button:not([size='mini']) {
+  width: 276rpx;
+}

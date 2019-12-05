@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/shopCar/shopCar",
+    "pages/myself/myself",
+    "pages/xiangqing/xiangqing",
+    "pages/location/location"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "利民水店",
+    "navigationBarBackgroundColor": "#3A4862",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye1.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei1.png"
+      },
+      {
+        "pagePath": "pages/location/location",
+        "text": "门店定位",
+        "iconPath": "images/location.png",
+        "selectedIconPath": "images/location1.png"
+      },
+      {
+        "pagePath": "pages/shopCar/shopCar",
+        "text": "购物车",
+        "iconPath": "images/gouwuche.png",
+        "selectedIconPath": "images/gouwuche1.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode1.png"
+      }
+    ],
+    "selectedColor": "#D81E06"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-icon": "vant-weapp/icon",
+    "van-tab": "vant-weapp/tab",
+    "van-tabs": "vant-weapp/tabs",
+    "van-grid": "vant-weapp/grid",
+    "van-grid-item": "vant-weapp/grid-item"
+  }
+}

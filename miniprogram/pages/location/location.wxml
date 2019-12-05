@@ -1,0 +1,10 @@
+<view class="content">
+  <image src="cloud://mydemo-1.6d79-mydemo-1-1300749996/shopIcon/u=3197990638,2815922014&fm=15&gp=0.jpg"></image>
+  <view class="info">
+    <text class="title">利民水店</text>
+    <text>电话：52052052052</text>
+    <text>地址：广东省白云区</text>
+  </view>
+<van-button bindtap="openLocation" type="primary">导航</van-button>
+
+</view> 
