@@ -46,3 +46,20 @@
 .allSelect {
   padding: 0 20rpx;
 }
+.empty {
+  margin: 0 auto;
+  margin-top: 260rpx;
+}
+.empty .icon {
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 30rpx solid#ccc;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+  margin:  30rpx 0;
+}
+.empty text {
+  display: block;
+  color: rgb(95, 95, 95);
+}

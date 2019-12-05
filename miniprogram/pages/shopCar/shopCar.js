@@ -5,8 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods: '',
-    allSelected: true
+    goods: '',            //所有商品信息
+    allSelected: true,    //所有选中
+    show:false,            //empty组件是否显示
+    allPrice:0            //总价
   },
   //改变商品选中状态
   changeSelected(e) {
@@ -119,7 +121,14 @@ Page({
    */
   onShow: function() {
     //获取本地存储的购物车信息
-    let str = wx.getStorageSync('goods')
+    let str = wx.getStorageSync('goods');
+    //判断是否有商品信息
+    if(!str || str=='[]') {
+      this.setData({
+        show:true
+      })
+      return
+    }
     let goods = JSON.parse(str);
     let allPrice = 0; //所有商品的价格总和
     goods.forEach(val => {
@@ -138,9 +147,14 @@ Page({
    */
   onHide: function() {
     //离开购物车页面的时候把购物车最新的商品信息储存到本地缓存
-    let data = this.data.goods;
+    let data = this.data.goods || [];
+    //不显示时离开页面时默认显示
     data = JSON.stringify(data)
-    wx.setStorageSync('goods', data)
+    wx.setStorageSync('goods', data);
+    //每次离开页面时恢复show恢复默认值
+    this.setData({
+      show:false
+    })
   },
 
   /**
