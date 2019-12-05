@@ -3,10 +3,6 @@ image {
   height: 160rpx;
   border-radius: 50%
 }
-
-
-
-
 page {
   background-color: rgb(223, 221, 221)
 }
