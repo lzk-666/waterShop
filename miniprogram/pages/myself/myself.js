@@ -6,17 +6,27 @@ Page({
    */
   data: {
     userInfo:'',
-    hasUserInfo:true
+    hasUserInfo:false,
   },
-
+  //点击按钮获取用户信息授权
+  getUserInfo: function (e) {
+    if(e.detail.userInfo){
+      this.setData({
+        userInfo: e.detail.userInfo,
+        hasUserInfo:true
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      userInfo: app.globalData.userInfo,
-      hasUserInfo: true
-    })
+    if(app.globalData.userInfo) {
+      this.setData({
+        hasUserInfo:true,
+        userInfo:app.globalData.userInfo
+      })
+    }
   },
 
   /**

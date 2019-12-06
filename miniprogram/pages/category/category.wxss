@@ -3,7 +3,7 @@
   height: 450rpx;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10rpx;
+  margin-bottom: 50rpx;
 }
 .van-tab__pane.van-tab__pane--active {
   display: flex;
