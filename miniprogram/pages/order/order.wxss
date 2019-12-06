@@ -1,0 +1,15 @@
+.order {
+  margin: 0 auto;
+  margin-top: 260rpx;
+}
+.order .icon {
+  border-radius: 50%;
+  transform: translate(-50%);
+  position: relative;
+  left: 50%;
+  margin:  60rpx 0;
+}
+.order text {
+  display: block;
+  color: rgb(95, 95, 95);
+}

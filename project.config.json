@@ -88,6 +88,13 @@
 					"pathName": "pages/location/location",
 					"query": "id=ayGT0z0ZLNimByO6EAZUo14m1Uw8a69Rd7ux0gF4JM1zKzXy",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/order",
+					"pathName": "pages/order/order",
+					"query": "id=ayGT0z0ZLNimByO6EAZUo14m1Uw8a69Rd7ux0gF4JM1zKzXy",
+					"scene": null
 				}
 			]
 		}

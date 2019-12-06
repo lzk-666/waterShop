@@ -65,7 +65,8 @@ Page({
           ++val.selectedNumber
           allPrice += Number(val.sell_price) * 100
         } else {
-          if (val.selectedNumber == 1) return --val.selectedNumber
+          if (val.selectedNumber == 1) {return val.selectedNumber = 1}
+          --val.selectedNumber
           allPrice -= Number(val.sell_price) * 100
         }
       }
@@ -100,8 +101,29 @@ Page({
     })
 
   },
+  //点击购买按钮时
+  onClickButton() {
+    let flag = this.data.goods
+    if (flag) {
+      wx.navigateTo({
+        url: '/pages/order/order',
+      })
+      //下单完成后初始化所有数据
+      this.setData({
+        goods: '',  
+        allSelected: true,
+        show: false,
+        allPrice: 0
+      })
+      wx.removeStorageSync('goods')
+    }else {
+      wx.showToast({
+        title: '亲,你还没有选择商品',
+        icon:'none'
+      })
+    }
 
-
+  },
   /**
    * 生命周期函数--监听页面加载
    */

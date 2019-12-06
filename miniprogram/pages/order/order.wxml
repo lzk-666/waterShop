@@ -1,0 +1,4 @@
+<view class="order">
+  <van-icon name="success" size="100rpx" custom-class='icon' color="green" />
+  <text>下单成功</text>
+</view>
